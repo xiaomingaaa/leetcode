@@ -40,6 +40,7 @@ class Solution(object):
         tb=b
         while tb+tb>a and tb+tb<0:
             tb=tb+tb
+            ### 成倍的增加
             count=count+count
         return count+self.div(a-tb,b)
 # @lc code=end

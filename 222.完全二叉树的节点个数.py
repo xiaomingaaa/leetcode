@@ -15,6 +15,7 @@ class Solution:
     def countNodes(self, root: TreeNode) -> int:
         if root==None:
             return 0
+        ### 深度优先遍历
         left=self.countNodes(root.left)
         right=self.countNodes(root.right)
         return left+right+1
