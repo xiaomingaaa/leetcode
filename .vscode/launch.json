@@ -5,46 +5,53 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Launch Main",
+            "name": "Python: 当前文件",
+            "type": "python",
             "request": "launch",
-            "mainClass": "Main",
-            "projectName": "leetcode_368da6f6"
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
-        {
-            "type": "java",
-            "name": "Launch solution",
-            "request": "launch",
-            "mainClass": "code.solution",
-            "projectName": "leetcode_368da6f6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "code.Main",
-            "projectName": "leetcode_368da6f6"
-        },
-        {
-            "type": "java",
-            "name": "Launch MergeSort",
-            "request": "launch",
-            "mainClass": "MergeSort",
-            "projectName": "leetcode_368da6f6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "Solution",
-            "projectName": "leetcode_368da6f6"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "justMycode": true
-        }
+        // {
+        //     "type": "java",
+        //     "name": "Launch Main",
+        //     "request": "launch",
+        //     "mainClass": "Main",
+        //     "projectName": "leetcode_368da6f6"
+        // },
+        // {
+        //     "type": "java",
+        //     "name": "Launch solution",
+        //     "request": "launch",
+        //     "mainClass": "code.solution",
+        //     "projectName": "leetcode_368da6f6"
+        // },
+        // {
+        //     "type": "java",
+        //     "name": "Launch Main",
+        //     "request": "launch",
+        //     "mainClass": "code.Main",
+        //     "projectName": "leetcode_368da6f6"
+        // },
+        // {
+        //     "type": "java",
+        //     "name": "Launch MergeSort",
+        //     "request": "launch",
+        //     "mainClass": "MergeSort",
+        //     "projectName": "leetcode_368da6f6"
+        // },
+        // {
+        //     "type": "java",
+        //     "name": "Launch Solution",
+        //     "request": "launch",
+        //     "mainClass": "Solution",
+        //     "projectName": "leetcode_368da6f6"
+        // },
+        // {
+        //     "type": "java",
+        //     "name": "Launch Current File",
+        //     "request": "launch",
+        //     "mainClass": "${file}",
+        //     "justMycode": true
+        // }
     ]
 }

@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-04-18 15:21:35
-LastEditTime: 2021-04-18 16:00:35
+LastEditTime: 2021-04-21 19:34:19
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: /leetcode/219.存在重复元素-ii.py
@@ -14,7 +14,6 @@ FilePath: /leetcode/219.存在重复元素-ii.py
 
 # @lc code=start
 class Solution:
-    
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         count_set=list()
         for i in range(len(nums)):
