@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-04-22 17:01:11
-LastEditTime: 2021-05-13 21:36:24
+LastEditTime: 2021-05-22 16:30:19
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: /leetcode/53.最大子序和.py
@@ -13,22 +13,22 @@ FilePath: /leetcode/53.最大子序和.py
 #
 
 # @lc code=start
-# class Solution:
-#     def maxSubArray(self, nums: List[int]) -> int:
-#         dp=[0]*len(nums)
-#         dp[0]=nums[0]
-#         for i in range(1,len(nums)):
-#             dp[i]=max(dp[i-1]+nums[i], nums[i])
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        dp=[0]*len(nums)
+        dp[0]=nums[0]
+        for i in range(1,len(nums)):
+            dp[i]=max(dp[i-1]+nums[i], nums[i])
         
-#         return max(dp)
+        return max(dp)
 
-#     def maxSubArray_1(self, nums: List[int]) -> int:
-#         current_max=nums[0]
-#         for i in range(len(nums)):
-#             for j in range(i+1,len(nums)+1):
-#                 if current_max<sum(nums[i:j]):
-#                     current_max=sum(nums[i:j])
-#         return current_max
+    def maxSubArray_1(self, nums: List[int]) -> int:
+        current_max=nums[0]
+        for i in range(len(nums)):
+            for j in range(i+1,len(nums)+1):
+                if current_max<sum(nums[i:j]):
+                    current_max=sum(nums[i:j])
+        return current_max
 
 # a='HELLO'
 # b=[1,2]
