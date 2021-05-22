@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-04-22 17:01:11
-LastEditTime: 2021-04-24 20:56:22
+LastEditTime: 2021-05-13 21:36:24
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: /leetcode/53.最大子序和.py
@@ -38,32 +38,32 @@ FilePath: /leetcode/53.最大子序和.py
 # l=[-2,4]
 # m=map(lambda x:x*2,l)
 # print(m)
-def permute(nums):
-        n=len(nums)
-        if n<=1:
-            return [nums]
-        elif n==2:
-            return [[nums[0],nums[1]],[nums[1],nums[0]]]
-        kk=[]
-        for i in range(n):
-            nlst=nums[0:i]+nums[i+1:] 
-            c=permute(nlst)
-            ss=[]
-            for j in c:
-                w=[nums[i]]
-                w.extend(j)
-                ss.append(w)
-            #kk.extend(ss)
-        return kk
+# def permute(nums):
+#         n=len(nums)
+#         if n<=1:
+#             return [nums]
+#         elif n==2:
+#             return [[nums[0],nums[1]],[nums[1],nums[0]]]
+#         kk=[]
+#         for i in range(n):
+#             nlst=nums[0:i]+nums[i+1:] 
+#             c=permute(nlst)
+#             ss=[]
+#             for j in c:
+#                 w=[nums[i]]
+#                 w.extend(j)
+#                 ss.append(w)
+#             #kk.extend(ss)
+#         return kk
 
-def judge_seq(l):
-    for j in range(1,len(l)):
-        if abs(l[j]-l[j-1])>2:
-            return False
-    return True
+# def judge_seq(l):
+#     for j in range(1,len(l)):
+#         if abs(l[j]-l[j-1])>2:
+#             return False
+#     return True
 
-n=int(input())
-tempList=[i for i in range(1,n)]
+# n=int(input())
+# tempList=[i for i in range(1,n)]
 
 # for item in list(perms(tempList)):
 #     if item[0]==1 or item[0]==2:
@@ -87,17 +87,17 @@ tempList=[i for i in range(1,n)]
 #     i+=1
 # print(ans[0]+k//2+1)
 
-n,k=[int(z) for z in input().split(' ')]
-nums=[int(z) for z in input().split(' ')]
-i = 0
-for j in range(1, len(nums) - k + 1):
-    count = 0
-    while count < k and nums[j + count] == nums[i + count]:
-        count += 1
+# n,k=[int(z) for z in input().split(' ')]
+# nums=[int(z) for z in input().split(' ')]
+# i = 0
+# for j in range(1, len(nums) - k + 1):
+#     count = 0
+#     while count < k and nums[j + count] == nums[i + count]:
+#         count += 1
 
-    if nums[j + count] > nums[i + count]:
-        i = j
-print(i+k//2+1)
+#     if nums[j + count] > nums[i + count]:
+#         i = j
+# print(i+k//2+1)
 
 # @lc code=end
 
